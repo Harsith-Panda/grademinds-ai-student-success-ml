@@ -228,10 +228,17 @@ if st.session_state.page == "Analytics Dashboard":
     import os
     if uploaded:
         df = pd.read_csv(uploaded)
-    elif os.path.exists("student_performance_dataset.csv"):
-        df = pd.read_csv("student_performance_dataset.csv")
     else:
         df = None
+        default_csv_paths = [
+            "data/processed/data_preporcessed.csv",
+            "data/processed/student_performance_processed.csv",
+            "student_performance_dataset.csv",
+        ]
+        for csv_path in default_csv_paths:
+            if os.path.exists(csv_path):
+                df = pd.read_csv(csv_path)
+                break
 
     if df is not None:
         total = len(df)

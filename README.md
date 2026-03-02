@@ -188,7 +188,7 @@ streamlit run app.py
 The app will launch at:
 
 ```
-http://localhost:8501
+https://grademinds-ai.streamlit.app/
 ```
 
 ---
@@ -203,11 +203,11 @@ http://localhost:8501
 
 ### Classification Model
 
-- High accuracy with stable generalization
-- Balanced Precision & Recall
-- Confusion Matrix available inside app
+- **Model:** Decision Tree Classifier
+- **Accuracy:** 90.14%
+- **Macro F1-Score:** 0.90
 
-The system demonstrates strong predictive capability for structured academic datasets.
+The model shows strong and balanced performance in predicting student pass/fail outcomes.
 
 ---
 
@@ -233,5 +233,3 @@ GradeMinds AI demonstrates:
 - Deployment using Streamlit
 
 ---
-
-# 🚀 GradeMinds AI – Turning Academic Data into Intelligent Insights

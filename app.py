@@ -205,7 +205,7 @@ if st.session_state.page == "Analytics Dashboard":
             <span class='pill'>6-Tier Learner Classification</span>
             <span class='pill'>Educator Recommendations</span>
             <span class='pill'>Performance Visualisation</span>
-            <span class='pill'>Decision Tree Classifier · Linear Regression</span>
+            <span class='pill'>Decision Tree · Random Forest · Logistic Regression</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
